@@ -236,19 +236,20 @@ Ponderada de Programação da Semana 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;Considerando todas as informações apresentadas anteriormente, a arquitetura MVC será implementada através do Sails.js, um framework que proverá uma organização de estruturas para o desenvolvimento dessa aplicação. Além disso, outras ferramentas utilizadas serão:
 
-**Sails.js**
+**Sails.js:**
+
 &nbsp;&nbsp;&nbsp;&nbsp;O Sails.js é um framework MVC para Node.js que facilita a criação de aplicações web e APIs, seguindo o padrão MVC. Ele oferece várias opções de configuração de rotas e suporta diversos bancos de dados, incluindo o PostgreSQL. Esse framework foi escolhido para acelerar o desenvolvimento do projeto, aproveitando sua arquitetura que promove a manutenção e a escalabilidade.
 <br>
 
-**Banco de Dados PostgreSQL**
+**Banco de Dados PostgreSQL:**
 &nbsp;&nbsp;&nbsp;&nbsp;O PostgreSQL é um sistema de gerenciamento de banco de dados relacional conhecido por sua robustez e confiabilidade. Ele pode ser facilmente integrado com o framework Sails.js, o que simplifica o desenvolvimento da aplicação.
 <br>
 
-**Render**
+**Render:**
 &nbsp;&nbsp;&nbsp;&nbsp;O Render é um serviço de hospedagem de aplicações web que suporta a criação de aplicações web e APIs. Será utilizado para hospedar a aplicação em Sails.js e o banco de dados PostgreSQL, permitindo que eles sejam escalados conforme a demanda. Além disso, facilitará o processo de monitoramento da aplicação.
 <br>
 
-**API dos Correios**
+**API dos Correios:**
 &nbsp;&nbsp;&nbsp;&nbsp;A API dos Correios é uma ferramenta que possibilita a consulta de CEPs e endereços, sendo empregada para assegurar a uniformidade das respostas nos formulários, evitando assim a corrupção dos dados.
 <br><br>
 
@@ -260,19 +261,24 @@ Ponderada de Programação da Semana 1
 #### Implicações da Arquitetura:
 &nbsp;&nbsp;&nbsp;&nbsp;A arquitetura foi utilizada levando alguns aspectos em consideração:
 
-- ***Escalabilidade:*** A combinação da arquitetura MVC com o Sails.js e o Render permite uma expansão eficiente, garantindo que a aplicação possa lidar com um aumento de usuários e dados sem comprometer o desempenho.
+- ***Escalabilidade:***
+  A combinação da arquitetura MVC com o Sails.js e o Render permite uma expansão eficiente, garantindo que a aplicação possa lidar com um aumento de usuários e dados sem comprometer o desempenho.
 <br>
 
-- ***Facilidade de Manutenção:*** O uso do Sails.js, com sua estrutura baseada em MVC, simplifica a manutenção e as atualizações da aplicação. Alterações em uma parte do sistema (Model, View ou Controller) podem ser feitas com impacto mínimo nas outras partes, reduzindo a possibilidade de falhas.
+- ***Facilidade de Manutenção:***
+  O uso do Sails.js, com sua estrutura baseada em MVC, simplifica a manutenção e as atualizações da aplicação. Alterações em uma parte do sistema (Model, View ou Controller) podem ser feitas com impacto mínimo nas outras partes, reduzindo a possibilidade de falhas.
 <br>
 
-- ***Testabilidade Aprimorada:*** Com suporte para testes de unidade e integração, o Sails.js simplifica os testes automatizados, permitindo que sejam executados com mais frequência e facilidade.
+- ***Testabilidade Aprimorada:***
+  Com suporte para testes de unidade e integração, o Sails.js simplifica os testes automatizados, permitindo que sejam executados com mais frequência e facilidade.
 <br>
 
-- ***Segurança Reforçada:*** A estrutura MVC do Sails.js contribui para a segurança da aplicação, protegendo-a contra vulnerabilidades comuns. Ao encapsular as operações de banco de dados e separar a lógica de aplicação da apresentação do usuário, ajuda a prevenir ataques. Além disso, o PostgreSQL oferece recursos de segurança essenciais para proteger dados sensíveis.
+- ***Segurança Reforçada:***
+  A estrutura MVC do Sails.js contribui para a segurança da aplicação, protegendo-a contra vulnerabilidades comuns. Ao encapsular as operações de banco de dados e separar a lógica de aplicação da apresentação do usuário, ajuda a prevenir ataques. Além disso, o PostgreSQL oferece recursos de segurança essenciais para proteger dados sensíveis.
 <br>
 
-- ***Melhoria na Qualidade dos Dados:*** A integração com a API dos Correios para validação de dados de endereço eleva a qualidade dos dados coletados, evitando inconsistências e divergências.
+- ***Melhoria na Qualidade dos Dados:***
+  A integração com a API dos Correios para validação de dados de endereço eleva a qualidade dos dados coletados, evitando inconsistências e divergências.
 <br><br>
 
 ## Referências
