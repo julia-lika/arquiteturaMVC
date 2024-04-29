@@ -23,7 +23,7 @@ Ponderada de Programação da Semana 1
 - **_Controlador (Controller):_** O Controlador atua como intermediário entre o Modelo e a Visão. Ele interpreta as entradas do usuário, manipula as operações do Modelo e atualiza a Visão de acordo com as mudanças no Modelo. O Controlador contém a lógica de aplicação e coordena as interações entre o Modelo e a Visão.
 
 &nbsp;&nbsp;&nbsp;&nbsp;A arquitetura MVC promove a separação de preocupações ao dividir uma aplicação em três componentes distintos, cada um responsável por uma área específica da aplicação. Isso torna o código mais modular, facilitando a manutenção e o teste da aplicação. Além disso, a arquitetura MVC é altamente escalável, permitindo que novos recursos sejam adicionados à aplicação sem afetar os componentes existentes. [1]
-<br>
+<br><br>
 
 ## 3. Arquitetura do Projeto
 
@@ -204,7 +204,7 @@ Já o segundo consiste no cadastro:
 - ***formulário:*** estrutura de formulários;
 - ***botãoEnviar:*** botão que inicia a requisição de registro de respostas no banco de dados;
 - ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
-
+<br>
 ### Fluxo de Operações
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seguindo essa arquitetura o fluxo de operações segue a seguinte linha de execução:
@@ -230,7 +230,7 @@ Já o segundo consiste no cadastro:
 1. Na view Formulários, o usuário preenche o questionário que mais se encaixa no seu contexto e aperta o botãoEnviar para iniciar o registro de suas respostas.
 2. A submissão do formulário aciona o método gravar no controlador formulários.
 3. O controlador formulários utiliza o modelo de mesmo nome para gravar as informações no banco de dados.
-<br>
+<br><br>
 
 ### Infraestrutura:
 
@@ -251,12 +251,12 @@ Já o segundo consiste no cadastro:
 **API dos Correios**
 
 &nbsp;&nbsp;&nbsp;&nbsp;A API dos Correios é uma ferramenta que possibilita a consulta de CEPs e endereços, sendo empregada para assegurar a uniformidade das respostas nos formulários, evitando assim a corrupção dos dados.
-<br>
+<br><br>
 
 #### Justifique as escolhas feitas e como elas impactam o projeto.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Optar pelo Sails.js como estrutura de desenvolvimento agiliza o processo de construção da aplicação, garantindo uma organização mais eficiente. A integração do Sails.js com o PostgreSQL e o Render estabelece uma base robusta para a escalabilidade e segurança da aplicação. Adicionalmente, a utilização da API dos Correios eleva a qualidade dos dados e a experiência do usuário final, complementando toda essa infraestrutura.
-<br>
+<br><br>
 
 #### Implicações da Arquitetura:
 
@@ -271,7 +271,7 @@ Já o segundo consiste no cadastro:
 - ***Segurança Reforçada:*** A estrutura MVC do Sails.js contribui para a segurança da aplicação, protegendo-a contra vulnerabilidades comuns. Ao encapsular as operações de banco de dados e separar a lógica de aplicação da apresentação do usuário, ajuda a prevenir ataques. Além disso, o PostgreSQL oferece recursos de segurança essenciais para proteger dados sensíveis.
 <br>
 - ***Melhoria na Qualidade dos Dados:*** A integração com a API dos Correios para validação de dados de endereço eleva a qualidade dos dados coletados, evitando inconsistências e divergências.
-<br>
+<br><br>
 
 ## Referências
 
