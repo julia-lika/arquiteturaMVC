@@ -106,6 +106,13 @@ Já o segundo é o formulários:
 - ***botãoLogin:*** botão que inicia a requisição;
 - ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 
+Já o segundo é o dashboard que exibirá os gráficos e dados requisitados, que tem as seguintes propriedades:
+- ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
+- ***gráficos:*** gráficos plotados de acordo com a seleção dos filtros;
+- ***caixaSeleção:*** caixa de selecão que faz a filtragem dos dados;
+- ***botão:*** botão que inicia a requisição;
+- ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
+
 ### Fluxo de Operações
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seguindo essa arquitetura o fluxo de operações segue a seguinte linha de execução:
