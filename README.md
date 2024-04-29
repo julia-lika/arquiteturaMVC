@@ -264,12 +264,16 @@ Já o segundo consiste no cadastro:
 
 - ***Escalabilidade:*** A combinação da arquitetura MVC com o Sails.js e o Render permite uma expansão eficiente, garantindo que a aplicação possa lidar com um aumento de usuários e dados sem comprometer o desempenho.
 <br>
+
 - ***Facilidade de Manutenção:*** O uso do Sails.js, com sua estrutura baseada em MVC, simplifica a manutenção e as atualizações da aplicação. Alterações em uma parte do sistema (Model, View ou Controller) podem ser feitas com impacto mínimo nas outras partes, reduzindo a possibilidade de falhas.
 <br>
+
 - ***Testabilidade Aprimorada:*** Com suporte para testes de unidade e integração, o Sails.js simplifica os testes automatizados, permitindo que sejam executados com mais frequência e facilidade.
 <br>
+
 - ***Segurança Reforçada:*** A estrutura MVC do Sails.js contribui para a segurança da aplicação, protegendo-a contra vulnerabilidades comuns. Ao encapsular as operações de banco de dados e separar a lógica de aplicação da apresentação do usuário, ajuda a prevenir ataques. Além disso, o PostgreSQL oferece recursos de segurança essenciais para proteger dados sensíveis.
 <br>
+
 - ***Melhoria na Qualidade dos Dados:*** A integração com a API dos Correios para validação de dados de endereço eleva a qualidade dos dados coletados, evitando inconsistências e divergências.
 <br><br>
 
