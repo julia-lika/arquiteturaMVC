@@ -5,7 +5,7 @@ Ponderada de Programação da Semana 1
 ## 1. Descrição do Projeto
 
 - **Nome do Projeto:** Abandono Zero (PsicoPets)
-- **Descrição:** O projeto consiste em
+- **Descrição:** O projeto tem como objetivo desenvolver uma aplicação web que correlaciona dados sobre comportamentos humanos e as relações destes com a compra, adoção, preterimento de adquirir ou até o desinteresse no adquirimento de cachorros através de formulários e armazenar essas respostas em um banco de dados, de forma que esses dados possam ser acessados e disponibilizados para downloads, sendo que apenas o administrador tenha acesso a essas informações.
 - **Arquitetura:** MVC (Model-View-Controller)
 - **Ferramenta de Diagramação:** A ferramenta de diagramação utilizada foi o draw.io
 <br>
@@ -26,8 +26,6 @@ Ponderada de Programação da Semana 1
 <br>
 
 ## 3. Arquitetura do Projeto
-
-&nbsp;&nbsp;&nbsp;&nbsp;O projeto tem como objetivo desenvolver uma aplicação web que correlaciona dados sobre comportamentos humanos e as relações destes com a compra, adoção, preterimento de adquirir ou até o desinteresse no adquirimento de cachorros através de formulários e armazenar essas respostas em um banco de dados, de forma que esses dados possam ser acessados e disponibilizados para downloads, sendo que apenas o administrador tenha acesso a essas informações.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para facilitar o entendimento da aplicação essa arquitetura foi dividida em duas partes: do administrador, que terá acesso aos gráficos e dados, e o usuário, que irá responder um dos quatro formulários.
 
