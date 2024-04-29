@@ -236,20 +236,19 @@ Ponderada de Programação da Semana 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;Considerando todas as informações apresentadas anteriormente, a arquitetura MVC será implementada através do Sails.js, um framework que proverá uma organização de estruturas para o desenvolvimento dessa aplicação. Além disso, outras ferramentas utilizadas serão:
 
-**Sails.js:**
-
+- **Sails.js:**
 &nbsp;&nbsp;&nbsp;&nbsp;O Sails.js é um framework MVC para Node.js que facilita a criação de aplicações web e APIs, seguindo o padrão MVC. Ele oferece várias opções de configuração de rotas e suporta diversos bancos de dados, incluindo o PostgreSQL. Esse framework foi escolhido para acelerar o desenvolvimento do projeto, aproveitando sua arquitetura que promove a manutenção e a escalabilidade.
 <br>
 
-**Banco de Dados PostgreSQL:**
+- **Banco de Dados PostgreSQL:**
 &nbsp;&nbsp;&nbsp;&nbsp;O PostgreSQL é um sistema de gerenciamento de banco de dados relacional conhecido por sua robustez e confiabilidade. Ele pode ser facilmente integrado com o framework Sails.js, o que simplifica o desenvolvimento da aplicação.
 <br>
 
-**Render:**
+- **Render:**
 &nbsp;&nbsp;&nbsp;&nbsp;O Render é um serviço de hospedagem de aplicações web que suporta a criação de aplicações web e APIs. Será utilizado para hospedar a aplicação em Sails.js e o banco de dados PostgreSQL, permitindo que eles sejam escalados conforme a demanda. Além disso, facilitará o processo de monitoramento da aplicação.
 <br>
 
-**API dos Correios:**
+- **API dos Correios:**
 &nbsp;&nbsp;&nbsp;&nbsp;A API dos Correios é uma ferramenta que possibilita a consulta de CEPs e endereços, sendo empregada para assegurar a uniformidade das respostas nos formulários, evitando assim a corrupção dos dados.
 <br><br>
 
