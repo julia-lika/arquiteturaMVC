@@ -51,7 +51,7 @@ Ponderada de Programação da Semana 1
 - ***senha:*** senha do admin;
 - ***role:*** o papel/acessos atribuídos aos usuários. 
 
-Já o segundo deles, o formulárioTem, será o modelo de perguntas baseado em usuários que já possuem cachorro(s):
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo deles, o formulárioTem, será o modelo de perguntas baseado em usuários que já possuem cachorro(s):
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, segue o documento que constam todas os dados a serem coletados:
 
 <div align="center" width="100%">
@@ -74,13 +74,13 @@ Já o segundo deles, o formulárioTem, será o modelo de perguntas baseado em us
 
 </div>
 
-O terceiro deles, o formulárioTeve, será o modelo de perguntas baseado em usuários que já possuíram cachorro(s):
+&nbsp;&nbsp;&nbsp;&nbsp;O terceiro deles, o formulárioTeve, será o modelo de perguntas baseado em usuários que já possuíram cachorro(s):
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
-O quarto, o formulárioQuerTer, será o modelo de perguntas baseado em usuários que estão pensando em adquirir cachorros, seja por meio da adoção ou da compra:
+&nbsp;&nbsp;&nbsp;&nbsp;O quarto, o formulárioQuerTer, será o modelo de perguntas baseado em usuários que estão pensando em adquirir cachorros, seja por meio da adoção ou da compra:
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
-O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuários que não cogitam ter um cachorro e nem tiveram um:
+&nbsp;&nbsp;&nbsp;&nbsp;O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuários que não cogitam ter um cachorro e nem tiveram um:
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
 ### Controladores (Controllers):
@@ -91,7 +91,7 @@ O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuári
 - **buscar:** busca um usuário no banco de dados;
 - **exibir:** irá direcionar para outra página caso os dados sejam validados, que será, nesse caso, o página de dashboard.
 
-Já o segundo é o formulários: 
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo é o formulários: 
 - **buscar:** busca um dos 4 formulários no banco de dados;
 - **exibir:** irá direcionar para os gráficos específicos de acordo com os dados requisitados já na página do dashboard.
 
@@ -104,7 +104,7 @@ Já o segundo é o formulários:
 - ***botãoLogin:*** botão que inicia a requisição;
 - ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 
-Já o segundo é o dashboard que exibirá os gráficos e dados requisitados, que tem as seguintes propriedades:
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo é o dashboard que exibirá os gráficos e dados requisitados, que tem as seguintes propriedades:
 - ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
 - ***gráficos:*** gráficos plotados de acordo com a seleção dos filtros;
 - ***caixaSeleção:*** caixa de selecão que faz a filtragem dos dados;
@@ -157,16 +157,16 @@ Já o segundo é o dashboard que exibirá os gráficos e dados requisitados, que
 - ***senha:*** senha do usuário;
 - ***role:*** o papel/acessos atribuídos aos usuários. 
 
-Já o segundo deles, o formulárioTem, será o modelo de perguntas baseado em usuários que já possuem cachorro(s):
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo deles, o formulárioTem, será o modelo de perguntas baseado em usuários que já possuem cachorro(s):
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, o documento com as perguntas equivalentes é o mesmo já apresentado nas figuras 3 e 4.
 
-O terceiro deles, o formulárioTeve, será o modelo de perguntas baseado em usuários que já possuíram cachorro(s):
+&nbsp;&nbsp;&nbsp;&nbsp;O terceiro deles, o formulárioTeve, será o modelo de perguntas baseado em usuários que já possuíram cachorro(s):
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
-O quarto, o formulárioQuerTer, será o modelo de perguntas baseado em usuários que estão pensando em adquirir cachorros, seja por meio da adoção ou da compra:
+&nbsp;&nbsp;&nbsp;&nbsp;O quarto, o formulárioQuerTer, será o modelo de perguntas baseado em usuários que estão pensando em adquirir cachorros, seja por meio da adoção ou da compra:
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
-O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuários que não cogitam ter um cachorro e nem tiveram um:
+&nbsp;&nbsp;&nbsp;&nbsp;O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuários que não cogitam ter um cachorro e nem tiveram um:
 - ***listaDeInfos:*** todas as perguntas foram resumidas apenas por uma propriedade aqui na arquitetura por conta de questões de ilegibilidade pois a letra ficaria pequena, ainda não há documentos disponibilizados que constam os exatos dados que precisam ser coletados com esse formulário.
 
 ### Controladores (Controllers):
@@ -177,7 +177,7 @@ O último, o formulárioNãoQuer, será o modelo de perguntas baseado em usuári
 - **buscar:** busca um usuário no banco de dados;
 - **exibir:** irá direcionar para outra página caso os dados sejam validados, que será, nesse caso, o página com os formulários.
 
-Já o segundo é o formulários: 
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo é o formulários: 
 - **gravar:** grava os dados do formulário respondido no banco de dados.
 
 ### Views (Views):
@@ -189,8 +189,7 @@ Já o segundo é o formulários:
 - ***botãoLogin:*** botão que inicia a requisição;
 - ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 
-Já o segundo consiste no cadastro:
-&nbsp;&nbsp;&nbsp;&nbsp;Nas views há dois elementos, sendo o primeiro deles o login, responsável por coletar dados específicos e mandar para a validação e, eventualmente, a interface com os dados:
+&nbsp;&nbsp;&nbsp;&nbsp;Já o segundo consiste no cadastro:
 - ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
 - ***inputNome:*** nome associado ao conjunto de dados do usuário;
 - ***inputEmail:*** e-mail do usuário;
@@ -205,6 +204,7 @@ Já o segundo consiste no cadastro:
 - ***botãoEnviar:*** botão que inicia a requisição de registro de respostas no banco de dados;
 - ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 <br>
+
 ### Fluxo de Operações
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seguindo essa arquitetura o fluxo de operações segue a seguinte linha de execução:
