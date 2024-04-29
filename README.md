@@ -184,65 +184,98 @@ Já o segundo é o formulários:
 
 ### Views (Views):
 
-&nbsp;&nbsp;&nbsp;&nbsp;Como Views foi estabelecida apenas uma, a view de login que tem como elementos:
+&nbsp;&nbsp;&nbsp;&nbsp;Nas views há três elementos, sendo o primeiro deles o login, responsável por coletar dados específicos e mandar para a validação e, eventualmente, a interface com os dados:
+- ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
+- ***inputUsuário:*** nome do usuário;
+- ***inputSenha:*** senha;
+- ***botãoLogin:*** botão que inicia a requisição;
+- ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 
-- **navbar:** que é a barra de navegação;
-- **formulario:** que é o formulário de login;
-- **linkdeCadastro:** que é o link que redireciona para a página de cadastro;
-- **botao:** que é o botão que irá enviar as informações para o controller.
+Já o segundo consiste no cadastro:
+&nbsp;&nbsp;&nbsp;&nbsp;Nas views há dois elementos, sendo o primeiro deles o login, responsável por coletar dados específicos e mandar para a validação e, eventualmente, a interface com os dados:
+- ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
+- ***inputNome:*** nome associado ao conjunto de dados do usuário;
+- ***inputEmail:*** e-mail do usuário;
+- ***inputUsuário:*** nome do usuário;
+- ***inputSenha:*** senha;
+- ***botãoCadastrar:*** botão que inicia a requisição;
+- ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Por fim, há o de formulários:
+- ***header:*** elemento visual (no wireframe do projeto, a navbar com os acessos às outras partes do site estará dentro da header)
+- ***formulário:*** estrutura de formulários;
+- ***botãoEnviar:*** botão que inicia a requisição de registro de respostas no banco de dados;
+- ***footer:***  rodapé com informações adicionais, como informações de contato, links de política de privacidade ou direitos autorais.
 
 ### Fluxo de Operações
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seguindo essa arquitetura o fluxo de operações segue a seguinte linha de execução:
 
-1. O administrador acessa a página de login e é apresentado com a view Login.
-2. O administrador preenche suas credenciais no formulario e clica no botao para submeter o formulário.
-3. A submissão do formulário aciona o método buscar no controlador usuarios.
-4. O controlador usuarios usa o modelo usuarios para verificar as credenciais no banco de dados.
-5. Se as credenciais estiverem corretas, o controlador invoca o método exibir para carregar o dashboard.
-6. A view do dashboard é apresentada ao administrador, possivelmente com informações personalizadas obtidas através do modelo usuarios.
+***linhas de cor lilás:***
+1. O usuário acessa a página de login e se depara com a view Login.
+2. O usuário preenche suas credenciais no login e clica no botãoLogin para submeter o login.
+3. A submissão do login aciona o método buscar no controlador users.
+4. O controlador users utiliza o modelo de mesmo nome para verificar as informações do usuário no banco de dados.
+5. Se as credenciais estiverem corretas, o controlador invoca o método exibir para carregar a página com formulários.
+6. A view dos formulários é apresentada ao usuário.
+<br>
+
+***linhas de cor laranja:***
+1. O usuário acessa a página de cadastro e se depara com a view Cadastro.
+2. O usuário preenche suas informações e clica no botãoCadastrar para submeter o cadastro.
+3. A submissão do cadastro aciona o método gravar no controlador users.
+4. O controlador users utiliza o modelo de mesmo nome para gravar as informações do novo usuário no banco de dados.
+5. A view dos formulários é apresentada ao usuário recém-cadastrado.
+<br>
+
+***linhas de cor azul:***
+1. Na view Formulários, o usuário preenche o questionário que mais se encaixa no seu contexto e aperta o botãoEnviar para iniciar o registro de suas respostas.
+2. A submissão do formulário aciona o método gravar no controlador formulários.
+3. O controlador formulários utiliza o modelo de mesmo nome para gravar as informações no banco de dados.
+<br>
 
 ### Infraestrutura:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Considerando todas as informações apresentadas anteriormente, a aqruitetura MVC será implementada por meio do framework Sails.js, que proporcionará uma estrutura organizada para o desenvolvimento dessa aplicação. Além disso, os componentes a serem utilizados nessa aplicação consistem em:
+&nbsp;&nbsp;&nbsp;&nbsp;Considerando todas as informações apresentadas anteriormente, a arquitetura MVC será implementada através do Sails.js, um framework que proverá uma organização de estruturas para o desenvolvimento dessa aplicação. Além disso, outras ferramentas utilizadas serão:
 
 **Sails.js**
 
-&nbsp;&nbsp;&nbsp;&nbsp;O Sails.js é um framework MVC para Node.js que permite a criação de aplicações web e APIs e implementa o padrão MVC, oferencendo diversas configurações de rotas e suportando diversos bancos de dados, como o PostgreSQL. Dessa forma, esse framework foi escolhido com o intuito de acelerar o desenvolvimento do projeto e pelo fato da sua arquitetura promover a manutenção e a escalabilidade.
-
+&nbsp;&nbsp;&nbsp;&nbsp;O Sails.js é um framework MVC para Node.js que facilita a criação de aplicações web e APIs, seguindo o padrão MVC. Ele oferece várias opções de configuração de rotas e suporta diversos bancos de dados, incluindo o PostgreSQL. Esse framework foi escolhido para acelerar o desenvolvimento do projeto, aproveitando sua arquitetura que promove a manutenção e a escalabilidade.
+<br>
 **Banco de Dados PostgreSQL**
 
-&nbsp;&nbsp;&nbsp;&nbsp;O PostgreSQL é um sistema de gerenciamento de banco de dados relacional, sendo conhecido por ser robusto e confiável, além disso, ele pode ser integrado com o framework Sails.js o que irá facilitar no desenvolvimento da aplicação.
-
+&nbsp;&nbsp;&nbsp;&nbsp;O PostgreSQL é um sistema de gerenciamento de banco de dados relacional conhecido por sua robustez e confiabilidade. Ele pode ser facilmente integrado com o framework Sails.js, o que simplifica o desenvolvimento da aplicação.
+<br>
 **Render**
 
-&nbsp;&nbsp;&nbsp;&nbsp;O Render é um serviço de hospedagem de aplicações web que permite a criação de aplicações web e APIs, dessa forma será utilizado para hospedar a aplicação em Sails.js e o banco de PostgreSQL, de forma que esses possam ser escalados de acordo com a demanda, e que o processo de monitoramento da aplicaçãos seja facilitado.
-
+&nbsp;&nbsp;&nbsp;&nbsp;O Render é um serviço de hospedagem de aplicações web que suporta a criação de aplicações web e APIs. Será utilizado para hospedar a aplicação em Sails.js e o banco de dados PostgreSQL, permitindo que eles sejam escalados conforme a demanda. Além disso, facilitará o processo de monitoramento da aplicação.
+<br>
 **API dos Correios**
 
-&nbsp;&nbsp;&nbsp;&nbsp;A API dos Correios é uma API que permite a consulta de CEPs e endereços, sendo utilizada para garantir a padronização das respostas nos formulários, de forma que os dados não sejam corrompidos.
+&nbsp;&nbsp;&nbsp;&nbsp;A API dos Correios é uma ferramenta que possibilita a consulta de CEPs e endereços, sendo empregada para assegurar a uniformidade das respostas nos formulários, evitando assim a corrupção dos dados.
+<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Com base nessas tecnologias, no Sails.js, os models representam a estrutura de dados da aplicação e são usados para interagir com o PostgreSQL, definindo as regras de negócios e validações que são aplicadas antes que os dados sejam enviados ao banco de dados e garantindo a integridade e a qualidade dos dados persistidos. Enquanto, as views no Sails.js são geradas no lado do servidor e enviadas para o cliente, sendo responsáveis por apresentar a interface do usuário de forma dinâmica e interativa, utilizando os dados fornecidos pelos controladores. Por fim, os controladores no Sails.js lidam com a lógica de processamento de entrada de dados, manipulação de modelos e seleção de views. Eles atuam como o intermediário entre os models e as views, garantindo que as ações do usuário sejam tratadas corretamente e que as respostas adequadas sejam fornecidas.
+#### Justifique as escolhas feitas e como elas impactam o projeto.
 
-### Justifique as escolhas feitas e como elas impactam o projeto.
-
-&nbsp;&nbsp;&nbsp;&nbsp;A escolha do Sails.js como framework de desenvolvimento permite que a aplicação seja desenvolvida de forma mais rápida e organizada e que os dados sejam persistidos de forma segura e confiável. Além disso, A combinação do Sails.js com o PostgreSQL e o Render fornece uma base sólida para uma aplicação escalável e segura. Por fim, a API dos Correios complementa essa infraestrutura ao melhorar a qualidade dos dados e a experiência do usuário final.
+&nbsp;&nbsp;&nbsp;&nbsp;Optar pelo Sails.js como estrutura de desenvolvimento agiliza o processo de construção da aplicação, garantindo uma organização mais eficiente. A integração do Sails.js com o PostgreSQL e o Render estabelece uma base robusta para a escalabilidade e segurança da aplicação. Adicionalmente, a utilização da API dos Correios eleva a qualidade dos dados e a experiência do usuário final, complementando toda essa infraestrutura.
+<br>
 
 #### Implicações da Arquitetura:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Com base em todas as escolhas definidas anteriormente, é esperado que o projeto apresente as seguintes implicações:
+&nbsp;&nbsp;&nbsp;&nbsp;A arquitetura foi utilizada levando alguns aspectos em consideração:
 
-- **Escalabilidade:** A arquitetura MVC, em conjunto com o Sails.js e o Render, proporciona uma capacidade de escalar, garantindo que a aplicação possa lidar com um número crescente de usuários e dados sem uma perda de performance.
+- ***Escalabilidade:*** A combinação da arquitetura MVC com o Sails.js e o Render permite uma expansão eficiente, garantindo que a aplicação possa lidar com um aumento de usuários e dados sem comprometer o desempenho.
+<br>
+- ***Facilidade de Manutenção:*** O uso do Sails.js, com sua estrutura baseada em MVC, simplifica a manutenção e as atualizações da aplicação. Alterações em uma parte do sistema (Model, View ou Controller) podem ser feitas com impacto mínimo nas outras partes, reduzindo a possibilidade de falhas.
+<br>
+- ***Testabilidade Aprimorada:*** Com suporte para testes de unidade e integração, o Sails.js simplifica os testes automatizados, permitindo que sejam executados com mais frequência e facilidade.
+<br>
+- ***Segurança Reforçada:*** A estrutura MVC do Sails.js contribui para a segurança da aplicação, protegendo-a contra vulnerabilidades comuns. Ao encapsular as operações de banco de dados e separar a lógica de aplicação da apresentação do usuário, ajuda a prevenir ataques. Além disso, o PostgreSQL oferece recursos de segurança essenciais para proteger dados sensíveis.
+<br>
+- ***Melhoria na Qualidade dos Dados:*** A integração com a API dos Correios para validação de dados de endereço eleva a qualidade dos dados coletados, evitando inconsistências e divergências.
+<br>
 
-- **Manutenção:** O uso do framework baseado em MVC facilita a manutenção e atualizações da aplicação, sendo que as alterações em uma parte do sistema (Model, View ou Controller) podem ser feitas com um mínimo de impacto nas outras partes, reduzindo as falhas na aplicação.
-
-- **Testabilidade:** Como o Sails.js suporta testes de unidade e integração, os testes automatizados são simplificados e podem ser executados com maior frequência.
-
-- **Segurança:** A estrutura MVC do Sails.js ajudam a proteger a aplicação contra vulnerabilidades comuns ao encapsular as operações de banco de dados e ao separar a lógica de aplicação da apresentação do usuário. Além disso, o PostgreSQL oferece recursos de segurança que são fundamentais para a proteção de dados sensíveis.
-
-- **Qualidade dos Dados:** A utilização da API dos Correios para validação dos dados de endereço aumenta a qualidade dos dados coletados e evita divergências nesses dados.
-
-# Referências
+## Referências
 
 [1] Introdução ao Padrão MVC: Primeiros passos na Arquitetura MVC. Disponível em: <https://www.devmedia.com.br/introducao-ao-padrao-mvc/29308>.
 
